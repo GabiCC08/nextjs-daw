@@ -33,7 +33,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       article: data
-    }, // will be passed to the page component as props
+    },
   }
 }
 
@@ -44,6 +44,6 @@ export async function getStaticPaths() {
       { params: { articleId: '2' } },
       { params: { articleId: '3' } }
     ],
-    fallback: true // See the "fallback" section below
+    fallback: true
   };
 }
